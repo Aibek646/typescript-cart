@@ -9,7 +9,9 @@ const Nav = ({ viewCart, setViewCart }: PropsType) => {
     ) : (
         <button onClick={() => setViewCart(true)}>View Cart</button>
     );
-    return <div>Nav</div>;
+
+    const content = <nav className="nav">{button}</nav>;
+    return content;
 };
 
 export default Nav;
